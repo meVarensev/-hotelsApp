@@ -6,7 +6,7 @@ import {HomePage} from "./pages/home-page";
 function App() {
 
     return (
-        <div className="">
+        <div >
 
             <Router>
                 <Routes>

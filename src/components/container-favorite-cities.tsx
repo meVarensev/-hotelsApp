@@ -1,62 +1,25 @@
 import React from 'react';
-import {FavoriteCity} from "./favorite-city";
+import {City} from "./city";
+import {cities} from "../utils/email-regexp";
+import {IFavoriteCity} from "../utils/interface";
+import {IconHome} from "./icon-home";
 
-const cities = [
-    {
-        cityName: "Moscow Marriott Grand Hotel",
-        rating: 3,
-        date: "17.04.2023",
-        count: 3,
-        price: 1600,
-        id: 1,
-    },
-    {
-        cityName: "Moscow Marriott Grand Hotel",
-        rating: 3,
-        date: "17.04.2023",
-        count: 3,
-        price: 1600,
-        id: 2,
-    },
-    {
-        cityName: "Moscow Marriott Grand Hotel",
-        rating: 3,
-        date: "17.04.2023",
-        count: 3,
-        price: 1600,
-        id: 3,
-    }
-    ,
-    {
-        cityName: "Moscow Marriott Grand Hotel",
-        rating: 3,
-        date: "17.04.2023",
-        count: 3,
-        price: 1600,
-        id: 4,
-    }
-
-]
-
-interface IFavoriteCity {
-    cityName: string,
-    rating: number,
-    date: string,
-    count: number,
-    price: number,
-    id: number,
-}
 
 function ContainerFavoriteCities() {
     return (
         <div
-            className="scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-300 overflow-y-scroll h-[350px] pr-[8px]">
-            {cities.map(({cityName, id, rating, price, count, date}: IFavoriteCity) => <FavoriteCity key={id}
-                                                                                                     cityName={cityName}
-                                                                                                     rating={rating}
-                                                                                                     date={date}
-                                                                                                     count={count}
-                                                                                                     price={price}/>)}
+            className="scrollbar-thin  scrollbar-thumb-[#41522E]  scrollbar-track-[#E7E7E7] overflow-y-scroll h-[350px] pr-[8px]">
+            {cities.map(({cityName, id, rating, price, count, date}: IFavoriteCity) => {
+                return <div className="border-b-2">
+                    <City key={id}
+                          cityName={cityName}
+                          rating={rating}
+                          date={date}
+                          count={count}
+                          price={price}/>
+
+                </div>
+            })}
         </div>
     );
 }

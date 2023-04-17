@@ -7,7 +7,7 @@ function HomePage() {
 
 
     return (
-        <div className="bg-[#E5E5E5] w-full h-full  ">
+        <div className="bg-[#E5E5E5] w-full h-full  mb-[32px] ">
             <Header/>
             <MainContainer/>
         </div>

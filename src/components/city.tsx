@@ -10,9 +10,9 @@ interface IFavoriteCity {
     rating: number
 }
 
-function FavoriteCity({cityName, rating, price, date, count}: IFavoriteCity) {
+function City({cityName, rating, price, date, count}: IFavoriteCity) {
     return (
-        <div className="border-b-2">
+        <div className="w-full">
             <div className="flex justify-between mb-[13px] mt-[3px]">
                 <p>{cityName}</p>
                 <FavoriteIcon className="text-[#E55858] cursor-pointer hover:text-[#b91c1c]"/>
@@ -22,10 +22,13 @@ function FavoriteCity({cityName, rating, price, date, count}: IFavoriteCity) {
             </p>
             <div className="flex justify-between  mb-[13px]">
                 <Rating name="read-only" value={rating} readOnly/>
-                <p><span className="text-[#878787] font-light text-xs">Price:</span> <span>  {price}₽</span></p>
+                <p>
+                    <span className="text-[#878787] font-light text-xs mr-3">Price:</span>
+                    <span>{price}₽</span>
+                </p>
             </div>
         </div>
     );
 }
 
-export {FavoriteCity};
+export {City};
