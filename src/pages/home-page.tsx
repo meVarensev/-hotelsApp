@@ -1,5 +1,4 @@
 import React from 'react';
-import {useNavigate} from "react-router-dom";
 import {Header} from "../components/header";
 import {MainContainer} from "../components/main-container";
 
