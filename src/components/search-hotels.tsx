@@ -10,8 +10,8 @@ function SearchHotels() {
             className="scrollbar-thin  scrollbar-thumb-[#41522E]  scrollbar-track-[#E7E7E7] overflow-y-scroll h-[529px] w-full pr-[8px]">
             {
                 cities.map(({cityName, id, price, rating, date, count}: IFavoriteCity) => {
-                    return <div className="flex items-center justify-center  border-b-2  pr-[8px]">
-                        <div key={id} className="w-full flex">
+                    return <div className="flex items-center justify-center w-full   border-b-2  pr-[8px]">
+                        <div key={id} className="w-full h-full flex items-center justify-center">
                             <div className="mr-6">
                                 <IconHome/>
                             </div>
