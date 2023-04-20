@@ -20,7 +20,7 @@ function SearchForm() {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}
-              className="min-w-[360px] max-h-[410px]  bg-[#FFFFFF] drop-shadow-xl mb-[24px] p-[32px] rounded-[16px]">
+              className="min-w-[360px] min-h-[410px]  bg-[#FFFFFF] drop-shadow-xl mb-[24px] p-[32px] rounded-[16px]">
             <div className="mb-[18px]">
                 <p className="input-title">Локация</p>
                 <input

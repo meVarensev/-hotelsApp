@@ -12,7 +12,6 @@ function Header() {
 
     return (
         <div className="flex">
-            <p>dsadasd</p>
             <div className="m-[32px] flex justify-between  items-center w-full">
                 <p className="text-[24px] font-medium leading-[28px] text-[#41522E] cursor-pointer">Simple Hotel Check</p>
                 <Button style={{color: "#41522E"}} variant="text" endIcon={<LogoutIcon/>} onClick={handleClick}>

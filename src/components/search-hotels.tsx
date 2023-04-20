@@ -11,7 +11,7 @@ function SearchHotels() {
             {
                 cities.map(({cityName, id, price, rating, date, count}: IFavoriteCity) => {
                     return <div className="flex items-center justify-center  border-b-2  pr-[8px]">
-                        <div key={id} className="w-full">
+                        <div key={id} className="w-full flex">
                             <div className="mr-6">
                                 <IconHome/>
                             </div>
