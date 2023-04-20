@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint --fix --ext .ts,.tsx .",
-    "start": "npx tailwindcss -i ./src/input.css -o ./public/css/output.css --watch"
+    "start": "npx tailwindcss -i ./src/input.css -o /css/output.css --watch"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
