@@ -3,6 +3,20 @@ export const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".
 export const ERROR_MESSAGE = "Это поле обязательно"
 export const ERROR_MESSAGE_EMAIL = "Введите валидный email"
 
+
+interface IDefaultCity  {
+    country: string
+    date: string
+    count : number
+}
+
+export const defaultCity: IDefaultCity = {
+    country: "Москва",
+    date: JSON.stringify(new Date()),
+    count: 1
+}
+
+
 export const cities = [
     {
         cityName: "Moscow Marriott Grand Hotel",

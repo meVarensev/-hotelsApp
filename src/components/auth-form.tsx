@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {SubmitHandler, useForm} from 'react-hook-form';
 import {useNavigate} from "react-router-dom";
 import {EMAIL_REGEXP, ERROR_MESSAGE, ERROR_MESSAGE_EMAIL} from "../utils/email-regexp";
@@ -8,6 +8,7 @@ interface LoginFormInputs {
     login: string;
     password: string;
 }
+
 
 
 const AuthForm = () => {
@@ -49,8 +50,8 @@ const AuthForm = () => {
                     {...register("password", {
                     required: ERROR_MESSAGE ,
                         minLength : {
-                            value: 5 ,
-                            message: "Минимум 5 символов"
+                            value: 8 ,
+                            message: "Минимум 8 символов"
                         }
                 })} type="password"/>
 
