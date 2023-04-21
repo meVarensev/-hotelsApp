@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"vite\" \"npm run server\" \"npm run start\"",
+    "server": "json-server-auth --watch src/store/db.json --port 8080",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint --fix --ext .ts,.tsx .",
@@ -16,6 +17,7 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.12.0",
     "@mui/styled-engine-sc": "^5.12.0",
+    "axios": "^1.3.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.9",

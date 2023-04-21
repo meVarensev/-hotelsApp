@@ -9,13 +9,11 @@ function App() {
 
     return (
         <div>
-
             <Router>
                 <Routes>
                     <Route path="/" element={<HomePage/>}/>
                     <Route path="/login" element={<Auth props={<Login/>}/>}/>
                     <Route path="/register" element={<Auth props={<Register/>}/>}/>
-
                 </Routes>
             </Router>
         </div>

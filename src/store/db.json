@@ -1,3 +1,24 @@
 {
-  "users": []
+  "users": [
+    {
+      "email": "vitalik@gmail.com",
+      "password": "$2a$10$9lXzFBFDxoVmZ3REQAKate2bBW5u7hbAD/C9Lx3HVM8WlgaEUbRMW",
+      "id": "2"
+    },
+    {
+      "email": "vitalik.unit@gmail.com",
+      "password": "$2a$10$MPlCePSm3LnzS1GL7saWlOj31NBKQO79ESfOclmyCdX0NNlu4oeye",
+      "id": "P0z0qHq"
+    },
+    {
+      "email": "me@varensev.ru",
+      "password": "$2a$10$xngZ4EC7fc8rlPN11Rxe7e9N6DX7St.CS1AOsUDHO1gLHD/D77lpq",
+      "id": "Wyr-FKh"
+    },
+    {
+      "email": "vlad@gmail.com",
+      "password": "$2a$10$VAyTvWxXiMOpXfI1TE6dy.Z4Cvz6Y9mCmEA9NX1wmLTCOjrNZtfPC",
+      "id": "stKxGrb"
+    }
+  ]
 }
