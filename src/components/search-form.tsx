@@ -49,7 +49,7 @@ function SearchForm() {
                     className="my-input"
                     {...register("count", {
                         required: ERROR_MESSAGE
-                    })} type="number"/>
+                    })} type="number" min={0}/>
 
                 {errors.count && <p className="error-message">{errors.count.message}</p>}
             </div>
