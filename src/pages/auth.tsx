@@ -18,7 +18,7 @@ function Auth({props}:IAuthProps) {
                 rounded-[16px] shadow-[0_4px_34px_rgba(0,0,0,0.04)]  ">
                     <p className="text-[24px] flex justify-center  font-medium leading-[28px] pt-[32px]">
                         Simple Hotel Check</p>
-                    {props}
+                    {props.children}
                 </div>
             </div>
         </div>

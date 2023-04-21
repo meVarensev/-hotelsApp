@@ -4,8 +4,6 @@ import {CustomButton} from "./custom-button";
 import {SubmitHandler, useForm} from "react-hook-form";
 import {useNavigate} from "react-router-dom";
 
-import * as events from "events";
-import axios from "axios";
 import {requestPost} from "../utils/request-post";
 
 interface LoginFormInputs {
@@ -27,7 +25,7 @@ function FormRegister({name}: IProps) {
         reset();
         // здесь можно отправить данные на сервер для регистраци
 
-        requestPost(data, event)
+        requestPost(data)
         handleClickLogin();
 
     };
