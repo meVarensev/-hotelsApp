@@ -6,3 +6,10 @@ export interface IFavoriteCity {
     price: number,
     id: number,
 }
+
+
+export interface IGetHotelsParams {
+    location: string
+    checkInDate: string | Date
+    checkOutDate: string | Date
+}

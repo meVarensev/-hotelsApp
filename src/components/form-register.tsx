@@ -4,7 +4,7 @@ import {CustomButton} from "./custom-button";
 import {SubmitHandler, useForm} from "react-hook-form";
 import {useNavigate} from "react-router-dom";
 
-import {requestPost} from "../utils/request-post";
+import {postAuthUser} from "../utils/post-auth-user";
 
 interface LoginFormInputs {
     email: string;
@@ -20,16 +20,13 @@ function FormRegister({name}: IProps) {
     const navigate = useNavigate();
 
     const onSubmit: SubmitHandler<LoginFormInputs> = (data) => {
-
         console.log(data, "здесь можно отправить данные на сервер для регистраци");
-        reset();
         // здесь можно отправить данные на сервер для регистраци
-
-        requestPost(data)
+        postAuthUser(data)
+        reset();
         handleClickLogin();
 
     };
-
 
 
     const handleClickLogin = () => navigate('/');
