@@ -22,6 +22,9 @@ export const locationsSlice = createSlice({
         setLocations: (state, action: PayloadAction<IAuthState>) => {
             // state.user = action.payload
         },
+        getLocations: (state, action: PayloadAction<IAuthState>) => {
+            // state.user = action.payload
+        },
     },
 })
 

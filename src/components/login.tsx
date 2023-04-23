@@ -1,7 +1,5 @@
-import React, {useEffect} from 'react';
-import {SubmitHandler, useForm} from 'react-hook-form';
+import React from 'react';
 import {useNavigate} from "react-router-dom";
-import {EMAIL_REGEXP, ERROR_MESSAGE, ERROR_MESSAGE_EMAIL} from "../utils/email-regexp";
 import {CustomButton} from './custom-button';
 import {FormRegister} from "./form-register";
 
