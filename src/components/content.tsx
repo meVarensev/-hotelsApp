@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import CircularProgress from "@mui/material/CircularProgress";
 import {SearchHotels} from "./search-hotels";
 import {ScrollbarImage} from "./scrollbar-image";
 
+
 function Content() {
-    const [isLoading , setLoading] = useState(false)
 
     return (
         <div className="max-w-[664px] max-h-[902px] bg-[#FFFFFF] drop-shadow-xl p-[32px] rounded-[16px]">
@@ -28,9 +28,7 @@ function Content() {
             </p>
 
             <div>
-                <div className="flex items-center justify-center h-full w-full flex-col">
-                    {isLoading === true ? <CircularProgress/> : <SearchHotels/>}
-                </div>
+                <SearchHotels/>
             </div>
 
         </div>

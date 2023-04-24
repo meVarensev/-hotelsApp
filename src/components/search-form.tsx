@@ -1,21 +1,24 @@
-import React from 'react';
+import React from "react";
 import {CustomButton} from "./custom-button";
 import {SubmitHandler, useForm} from "react-hook-form";
 import {ERROR_MESSAGE} from "../utils/email-regexp";
 import {IGetHotelsParams} from "../utils/interface";
-import {getHotels} from "../utils/get-hotels";
-import {addDays, format} from "date-fns"
 import {sumDate} from "../utils/sumDate";
+import { useGetLocationsQuery } from '../../api/fetch-locations';
+import {useAppDispatch} from "../hoc/useAppDispatch";
+import {setLocation} from "../store/locations-slice";
+
+
 
 
 function SearchForm() {
+    const dispatch = useAppDispatch();
+
     const {register, handleSubmit, formState: {errors}, reset} = useForm<IGetHotelsParams>({mode: "onChange"});
-    const onSubmit: SubmitHandler<IGetHotelsParams> = (data: IGetHotelsParams) => {
-        console.log(data, "здесь можно отправить данные на сервер для поиска");
+    const onSubmit: SubmitHandler<IGetHotelsParams> = (data: IGetHotelsParams):void => {
         const newData = sumDate(data)
-        getHotels(newData)
+        dispatch(setLocation(newData))
         reset();
-        // здесь можно отправить данные на сервер для поиска
     };
 
     return (
@@ -53,8 +56,6 @@ function SearchForm() {
 
                 {errors.checkOutDate && <p className="error-message">{errors.checkOutDate.message}</p>}
             </div>
-
-
             <CustomButton props="Найти"/>
         </form>
     );

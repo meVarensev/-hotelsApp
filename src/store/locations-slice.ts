@@ -1,34 +1,34 @@
 import {createSlice} from '@reduxjs/toolkit'
 import type {PayloadAction} from '@reduxjs/toolkit'
+import {IGetHotelsParams} from "../utils/interface";
 
-export interface IAuthState {
 
-}
 interface I_InitialState {
-    locations: IAuthState
+    location: IGetHotelsParams
 }
 
-const initialState:I_InitialState = {
-    locations: {
-
+const initialState: I_InitialState = {
+    location: {
+        location: "Ufa",
+        checkInDate: "2023-04-24",
+        checkOutDate: "2023-04-25"
     }
 }
 
 export const locationsSlice = createSlice({
-    name: 'locations',
+    name: 'location',
     initialState,
     reducers: {
-        // Use the PayloadAction type to declare the contents of `action.payload`
-        setLocations: (state, action: PayloadAction<IAuthState>) => {
-            // state.user = action.payload
+        setLocation: (state, action: PayloadAction<IGetHotelsParams>) => {
+            state.location = action.payload
         },
-        getLocations: (state, action: PayloadAction<IAuthState>) => {
+        getLocations: (state, action: PayloadAction<IGetHotelsParams>) => {
             // state.user = action.payload
         },
     },
 })
 
-export const {setLocations} = locationsSlice.actions
+export const {setLocation} = locationsSlice.actions
 
 const locationsReducer = locationsSlice.reducer
 export {locationsReducer}
