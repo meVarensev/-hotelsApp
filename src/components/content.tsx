@@ -9,7 +9,6 @@ function Content() {
 
     return (
         <div className="max-w-[664px] max-h-[902px] bg-[#FFFFFF] drop-shadow-xl p-[32px] rounded-[16px]">
-
             <div className="flex justify-between mb-[26px]">
                 <div className="font-medium text-3xl text-[#424242] gap-3.5 flex items-center ">
                     <span>Отели</span>
@@ -18,19 +17,13 @@ function Content() {
                 </div>
                 <span className="font-normal text-[#41522E] text-2xl">07 июля 2020</span>
             </div>
-
             <ScrollbarImage/>
-
             <p className="text-lg font-light text-[#424242] gap-2 flex items-center mb-[13px]">
                 <span>Добавлено в Избранное:</span>
                 <span className="font-medium">3</span>
                 <span>отеля</span>
             </p>
-
-            <div>
-                <SearchHotels/>
-            </div>
-
+            <SearchHotels/>
         </div>
     );
 }

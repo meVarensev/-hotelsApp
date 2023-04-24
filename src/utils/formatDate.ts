@@ -1,7 +1,7 @@
 import {addDays, format} from "date-fns";
 import {IGetHotelsParams} from "./interface";
 
-export const sumDate = ({location, checkInDate, checkOutDate}: IGetHotelsParams) => {
+export const formatDate = ({location, checkInDate, checkOutDate}: IGetHotelsParams) => {
     const convertCheckInDate = new Date(checkInDate);
     const sum = addDays(convertCheckInDate, Number(checkOutDate));
      const data = {

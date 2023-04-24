@@ -3,22 +3,26 @@ import {CustomButton} from "./custom-button";
 import {SubmitHandler, useForm} from "react-hook-form";
 import {ERROR_MESSAGE} from "../utils/email-regexp";
 import {IGetHotelsParams} from "../utils/interface";
-import {sumDate} from "../utils/sumDate";
-import { useGetLocationsQuery } from '../../api/fetch-locations';
+import {formatDate} from "../utils/formatDate";
+import {useGetLocationsQuery} from '../../api/fetch-locations';
 import {useAppDispatch} from "../hoc/useAppDispatch";
 import {setLocation} from "../store/locations-slice";
-
-
+import {defaultLocation} from "../utils/default-location";
 
 
 function SearchForm() {
     const dispatch = useAppDispatch();
 
-    const {register, handleSubmit, formState: {errors}, reset} = useForm<IGetHotelsParams>({mode: "onChange"});
-    const onSubmit: SubmitHandler<IGetHotelsParams> = (data: IGetHotelsParams):void => {
-        const newData = sumDate(data)
+    const {register, handleSubmit, formState: {errors}, reset} = useForm<IGetHotelsParams>({
+        mode: "onChange" , defaultValues: {
+            location: defaultLocation.location,
+            checkInDate : defaultLocation.checkInDate,
+            checkOutDate: defaultLocation.checkOutDate
+        }
+    });
+    const onSubmit: SubmitHandler<IGetHotelsParams> = (data: IGetHotelsParams): void => {
+        const newData = formatDate(data)
         dispatch(setLocation(newData))
-        reset();
     };
 
     return (

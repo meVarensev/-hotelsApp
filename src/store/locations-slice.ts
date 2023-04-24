@@ -1,6 +1,8 @@
 import {createSlice} from '@reduxjs/toolkit'
 import type {PayloadAction} from '@reduxjs/toolkit'
 import {IGetHotelsParams} from "../utils/interface";
+import {defaultLocation} from "../utils/default-location";
+import {formatDate} from "../utils/formatDate";
 
 
 interface I_InitialState {
@@ -8,11 +10,7 @@ interface I_InitialState {
 }
 
 const initialState: I_InitialState = {
-    location: {
-        location: "Ufa",
-        checkInDate: "2023-04-24",
-        checkOutDate: "2023-04-25"
-    }
+    location:  formatDate(defaultLocation)
 }
 
 export const locationsSlice = createSlice({
@@ -21,9 +19,6 @@ export const locationsSlice = createSlice({
     reducers: {
         setLocation: (state, action: PayloadAction<IGetHotelsParams>) => {
             state.location = action.payload
-        },
-        getLocations: (state, action: PayloadAction<IGetHotelsParams>) => {
-            // state.user = action.payload
         },
     },
 })
