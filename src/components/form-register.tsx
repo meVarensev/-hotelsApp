@@ -23,15 +23,21 @@ function FormRegister({name}: IProps) {
     const [addAuthUser] = useAddAuthUserMutation()
     const navigate = useNavigate();
     const dispatch = useAppDispatch()
+    const [addAuthUser] = useAddAuthUserMutation()
 
-    const onSubmit: SubmitHandler<LoginFormInputs> = (data) => {
+    const onSubmit: SubmitHandler<LoginFormInputs> =  (data) => {
         console.log(data, "здесь можно отправить данные на сервер для регистраци");
+<<<<<<< HEAD
         // здесь можно отправить данные на сервер для регистраци
         // postAuthUser(data)
         addAuthUser(data)
+=======
+        postAuthUser(data)
+        dispatch( authUser(data))
+>>>>>>> 77882309357d8344a62dc1e7a6f10fb46194fad5
 
         handleClickLogin();
-        dispatch(authUser(data))
+        // addAuthUser(data)
         reset();
     };
 

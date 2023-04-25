@@ -1,19 +1,34 @@
 {
   "users": [
     {
+<<<<<<< HEAD
       "email": "p222222sd2k@bas.ru",
       "password": "$2a$10$dE6YYGoMkKI3J8xIt/NUC./GRH3ARGMOlpY6EgySTzE48OYaLev7m",
+=======
+      "email": "vitalik.unit@gmail.com",
+      "password": "$2a$10$HQfAJ5MaIvZh.ppfxL6Y4ODi/u86jXs4dNmtKPqna8LrF6AMpkwlq",
+>>>>>>> 77882309357d8344a62dc1e7a6f10fb46194fad5
       "id": 1
     },
     {
       "email": "mse@varensev.ru",
+<<<<<<< HEAD
       "password": "$2a$10$vgwkvYz1aK8OKY55g.URhuzyXl2SyhOKGY6rpaQsZFmaGJib7rrOK",
       "id": 2
     },
     {
       "email": "pk@bas.ru",
       "password": "$2a$10$V./xqNHDPL/PqBemN5QYkuIjEQhJ3sXk2/YfjY284hKXp36BF7o7S",
+=======
+      "password": "$2a$10$Ii1xkkIQyPWJutbyYISkcuOpEr3mORcyl6s0GQVItoQuPK03/jrRq",
+      "id": 2
+    },
+    {
+      "email": "vitaslik.unit@gmail.com",
+      "password": "$2a$10$.YfNwOsren34uDcKGC0KYun1wlZOuuwvm0YS3q0E1loXAz/LBvn3S",
+>>>>>>> 77882309357d8344a62dc1e7a6f10fb46194fad5
       "id": 3
     }
-  ]
+  ],
+  "favorite-locations": []
 }
