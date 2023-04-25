@@ -1,9 +1,7 @@
 import axios from "axios";
+import {LoginFormInputs} from "./interface";
 
-interface LoginFormInputs {
-    email: string;
-    password: string;
-}
+
 
 export const postAuthUser = (data:LoginFormInputs) => {
 

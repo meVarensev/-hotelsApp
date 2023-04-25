@@ -14,7 +14,7 @@ function SearchHotels() {
     useEffect(() => {
         setLocation(searchLocation)
     }, [searchLocation])
-
+// TODO: in progress
     return (
         <div
             className="scrollbar-thin  scrollbar-thumb-[#41522E]  scrollbar-track-[#E7E7E7] overflow-y-scroll h-[529px] w-full pr-[8px]
@@ -22,7 +22,7 @@ function SearchHotels() {
 
             {isLoading ? <CircularProgress/> : <div className=" w-full h-full">
                 {
-                    // TODO: in progress
+
                     data.map(({hotelName, stars, hotelId, priceFrom, date, count}) =>
                         <div className=" w-full   border-b-2  pr-[8px]" key={hotelId}>
                             <div className="w-full h-full flex items-center justify-center">

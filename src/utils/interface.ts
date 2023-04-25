@@ -13,3 +13,8 @@ export interface IGetHotelsParams {
     checkInDate: string | Date
     checkOutDate: string | Date
 }
+
+export interface LoginFormInputs {
+    email: string;
+    password: string;
+}

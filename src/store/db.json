@@ -1,159 +1,20 @@
 {
   "users": [
     {
-      "email": "vitalik@gmail.com",
-      "password": "$2a$10$9lXzFBFDxoVmZ3REQAKate2bBW5u7hbAD/C9Lx3HVM8WlgaEUbRMW",
-      "id": "2"
-    },
-    {
       "email": "vitalik.unit@gmail.com",
-      "password": "$2a$10$MPlCePSm3LnzS1GL7saWlOj31NBKQO79ESfOclmyCdX0NNlu4oeye",
-      "id": "P0z0qHq"
+      "password": "$2a$10$HQfAJ5MaIvZh.ppfxL6Y4ODi/u86jXs4dNmtKPqna8LrF6AMpkwlq",
+      "id": 1
     },
     {
-      "email": "me@varensev.ru",
-      "password": "$2a$10$xngZ4EC7fc8rlPN11Rxe7e9N6DX7St.CS1AOsUDHO1gLHD/D77lpq",
-      "id": "Wyr-FKh"
+      "email": "mse@varensev.ru",
+      "password": "$2a$10$Ii1xkkIQyPWJutbyYISkcuOpEr3mORcyl6s0GQVItoQuPK03/jrRq",
+      "id": 2
     },
     {
-      "email": "vlad@gmail.com",
-      "password": "$2a$10$VAyTvWxXiMOpXfI1TE6dy.Z4Cvz6Y9mCmEA9NX1wmLTCOjrNZtfPC",
-      "id": "stKxGrb"
-    },
-    {
-      "email": "vitali222k.unit@gmail.com",
-      "password": "$2a$10$1GbMJ.kP8m4ulKJ/UV882e7letDUspPCjhz0HT18nhY2t6.3rQtqK",
-      "id": "_Ca4i80"
-    },
-    {
-      "email": "v22222italik.unit@gmail.com",
-      "password": "$2a$10$OUNAtPQOGQCxvoUho8hphOsrqDZF7nIE7Zir88hBml2lTOtezolia",
-      "id": "tBBeGtx"
-    },
-    {
-      "email": "vit333333alik.unit@gmail.com",
-      "password": "$2a$10$7k7P63AI/09iuQ8Dv3OkQO7QtiH9BgHEWq0j6ZukgLrUe5stAL.Iu",
-      "id": "RiXk95z"
-    },
-    {
-      "email": "vitalik.udnit@gmail.com",
-      "password": "$2a$10$0LRyJnKY8tpFmcKxlVHzl.smEpkmVUXUjr2utlYySgaaF5mP.vJEu",
-      "id": "D9GdIbV"
-    },
-    {
-      "email": "vitalhhhhhhhhik.unit@gmail.com",
-      "password": "$2a$10$OkT8088UTW/6U3OLPyjm4.8HWIYEA30OCkVZzE1brYfj85lSWkwpG",
-      "id": "u9aWyBt"
-    },
-    {
-      "email": "me33333@varensev.ru",
-      "password": "$2a$10$4uzjji5IVvUxEHdJxI/IFe0S4/9JmYCCQG6yVZ3GX9MG.TMaM19lm",
-      "id": "Q27BFv0"
-    },
-    {
-      "email": "pk@bas.ru",
-      "password": "$2a$10$fOdqwC0JqCaovdpbuPj7C.iUMuu/sZwI1yFCA7v4Gp2YkOOPqys..",
-      "id": "zUYgIoX"
-    },
-    {
-      "email": "dmelpri6666666mo@gmail.com",
-      "password": "$2a$10$7FQr/2Z5V4/9t9lKrQhb7upBKRwuBS/aIeCj0Tb/Apb/EZJgcN.g6",
-      "id": "Pn8NEDq"
-    },
-    {
-      "email": "pkiiiiiiiiiiiiiiiii@ba.ru",
-      "password": "$2a$10$YFO4mEIaeWc3hqKxS8/taeDLNV2Y38gfUqiqcxo3OAd8tpYhyEu6a",
-      "id": "t8CI71g"
-    },
-    {
-      "email": "mjjjjjjjje@varensev.ru",
-      "password": "$2a$10$O1vjpOJInJbuT5uQZzvpL.Z2vtkcxhGDU/4yI.roDXjRwFh/5Zrvq",
-      "id": "d_8o2yZ"
-    },
-    {
-      "email": "vitajjjjjjjjjjjjlik.unit@gmail.com",
-      "password": "$2a$10$gr/fw41nXi8Gz5/bzBMXNu6JKel2.bet5YomZC6xWrYpN56gShtfi",
-      "id": "mE2cJr3"
-    },
-    {
-      "email": "vitaljjjjjjik.unit@gmail.com",
-      "password": "$2a$10$0nTvZKHYNb9J9rY/vUbzh.HLm4hFoRUAwu9SBMxxYeuMdKbz1xmn.",
-      "id": "3datzJb"
-    },
-    {
-      "email": "vitalsssssik.unit@gmail.com",
-      "password": "$2a$10$p7639yKpAeur0SxTUMxSSOri5Hpxj8F0dlmg3fILLn.7ff9KMETyu",
-      "id": "-teBMJP"
-    },
-    {
-      "email": "msssssse@varensev.ru",
-      "password": "$2a$10$KxrWN0dQD5PTIuqGex41FuPmCK7Ceq9aBDvubOdm5l2DgtwT.5U2q",
-      "id": "7xms6Lm"
-    },
-    {
-      "email": "mssssse@varensev.ru",
-      "password": "$2a$10$1AQnijUZ/MkwybJBJFlNFexU86x2NvZqOmsrkjq6/vQewjhnQld02",
-      "id": "Q58F46S"
-    },
-    {
-      "email": "mssssssssse@varensev.ru",
-      "password": "$2a$10$0VoaCS2KPCtG/9PPxrtIF.q7CU5RaAuAf2OiSK0pGuKeFl1Egu9vq",
-      "id": "rQ052L0"
-    },
-    {
-      "email": "msssse@varensev.ru",
-      "password": "$2a$10$.NZA2lhNjBUphWn8r5XXLOBpUHFikLm4l9lfURfo9pxTOfN3PX5Oa",
-      "id": "cZ1JHW-"
-    },
-    {
-      "email": "psssssssk@bas.ru",
-      "password": "$2a$10$q/Yc374yGCCNxG1Cv3434.ikkkbvwNfPUaFbBYiyDOqC4NdzyBswm",
-      "id": "0hh_D79"
-    },
-    {
-      "email": "meffffffffff@varensev.ru",
-      "password": "$2a$10$je23lZugrceIvaG5xjqLRuv36W8idRVhguZGgEBIX5Uw9jn02/asy",
-      "id": "gWLD6Uq"
-    },
-    {
-      "email": "medddddddddd@varensev.ru",
-      "password": "$2a$10$N3wdIHwplbhBp/6lPGO4bOg7VYCBs26kIKRYUniQ6iC4anDNDDEnq",
-      "id": "B0p3DkL"
-    },
-    {
-      "email": "pfrggfk@bas.ru",
-      "password": "$2a$10$k.nAua47dKFfP0o1eWVo2.HAZ0l6gJClX0j541bzP9JlmqQiu0r4C",
-      "id": "VnWXoEL"
-    },
-    {
-      "email": "psssssssssssssssssaddadk@bas.ru",
-      "password": "$2a$10$IAoa78qtctnDfZyhvedEuOdv1pfhgdFm/GxfKhq169TXt.GPWZCze",
-      "id": "IPohi0X"
-    },
-    {
-      "email": "vitali22k.unit@gmail.com",
-      "password": "$2a$10$95B0uwSZxpTlI1kmEBwqiunIdqcr3WwuGjcXj0jgRd8qQohLhVYSW",
-      "id": "jxRwiAX"
-    },
-    {
-      "email": "vitssssssssssalik.unit@gmail.com",
-      "password": "$2a$10$KxK4UUGPohjnP.wfX2QUQuy31DY2ALzpKEL/vC22mgU4gVJJkz57K",
-      "id": "ajUxvp3"
-    },
-    {
-      "email": "vittttttttttalik.unit@gmail.com",
-      "password": "$2a$10$XCam3w764CSn2uP.1zlKZe7.Dobl4q.mpn/PYLTnNUVy0e18.XtvG",
-      "id": "obtRMnq"
-    },
-    {
-      "email": "mhhhhhe@varensev.ru",
-      "password": "$2a$10$niiyUy7bR188/QaDaofhNeJWjAEFL7ecMrn9uPg5uiDy9rIxt.bMS",
-      "id": "tf5YbWC"
-    },
-    {
-      "email": "vitauuuulik.unit@gmail.com",
-      "password": "$2a$10$/frmjxo/vQHGIo4QcCkr6eR6gn0UOspTiykB6EFm9yHIZfI2Yqmp.",
-      "id": "iAq5JA6"
+      "email": "vitaslik.unit@gmail.com",
+      "password": "$2a$10$.YfNwOsren34uDcKGC0KYun1wlZOuuwvm0YS3q0E1loXAz/LBvn3S",
+      "id": 3
     }
-  ]
+  ],
+  "favorite-locations": []
 }
