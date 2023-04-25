@@ -7,6 +7,7 @@ import {useNavigate} from "react-router-dom";
 import {postAuthUser} from "../utils/post-auth-user";
 import {useAppDispatch} from "../hoc/useAppDispatch";
 import {authUser} from "../store/auth-slice";
+import {useAddAuthUserMutation} from "../../api/fetch-auth";
 
 interface LoginFormInputs {
     email: string;
@@ -19,13 +20,16 @@ interface IProps {
 
 function FormRegister({name}: IProps) {
     const {register, handleSubmit, formState: {errors}, reset} = useForm<LoginFormInputs>({mode: "onChange"});
+    const [addAuthUser] = useAddAuthUserMutation()
     const navigate = useNavigate();
     const dispatch = useAppDispatch()
 
     const onSubmit: SubmitHandler<LoginFormInputs> = (data) => {
         console.log(data, "здесь можно отправить данные на сервер для регистраци");
         // здесь можно отправить данные на сервер для регистраци
-        postAuthUser(data)
+        // postAuthUser(data)
+        addAuthUser(data)
+
         handleClickLogin();
         dispatch(authUser(data))
         reset();

@@ -13,3 +13,10 @@ export interface IGetHotelsParams {
     checkInDate: string | Date
     checkOutDate: string | Date
 }
+
+export interface IGetHotels {
+    hotelName: string,
+    stars: string,
+    hotelId: string,
+    priceFrom: string
+}
