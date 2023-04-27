@@ -1,51 +1,13 @@
 {
   "users": [],
-  "goods": [
-    {
-      "id": 1,
-      "name": "Milk"
-    },
-    {
-      "id": 2,
-      "name": "bananas"
-    },
-    {
-      "id": 3,
-      "name": "icecream"
-    }
-  ],
   "favorite": [
     {
-      "hotelName": "Moscow Marriott Grand Hotel",
-      "stars": 5,
-      "priceFrom": 12000,
-      "date": "17.04.2023",
-      "count": 3,
-      "id": 1
-    },
-    {
-      "hotelName": "Radisson Collection Hotel Moscow",
-      "stars": 5,
-      "priceFrom": 20000,
-      "date": "17.04.2023",
-      "count": 3,
-      "id": 2
-    },
-    {
-      "hotelName": "Crowne Plaza Moscow World Trade Centre",
+      "hotelName": "Golden Ring Hotel",
       "stars": 5,
       "priceFrom": 10000,
       "date": "17.04.2023",
       "count": 3,
-      "id": 3
-    },
-    {
-      "hotelName": "Radisson Collection Hotel Moscow",
-      "stars": 5,
-      "priceFrom": 20000,
-      "date": "17.04.2023",
-      "count": 3,
-      "id": 4
+      "id": 1
     },
     {
       "hotelName": "Moscow Marriott Grand Hotel",
@@ -53,15 +15,7 @@
       "priceFrom": 9000,
       "date": "17.04.2023",
       "count": 3,
-      "id": 5
-    },
-    {
-      "hotelName": "AZIMUT Hotel Olympic Moscow",
-      "stars": 4,
-      "priceFrom": 8007.6,
-      "date": "17.04.2023",
-      "count": 3,
-      "id": 6
+      "id": 333578
     }
   ]
 }

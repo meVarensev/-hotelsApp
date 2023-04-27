@@ -36,6 +36,7 @@ function SearchHotels() {
                                     <IconHome/>
                                 </div>
                                 <Hotel
+                                    id={Number(hotelId)}
                                     hotelName={hotelName}
                                     stars={stars}
                                     priceFrom={priceFrom}

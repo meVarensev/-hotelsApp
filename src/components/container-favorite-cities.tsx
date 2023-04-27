@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {useGetFavoriteQuery} from "../../api/fetch-auth";
 import {Hotel} from "./hotel";
 import {IFavoriteCity} from "../utils/interface";
@@ -17,12 +17,12 @@ function ContainerFavoriteCities() {
             {data.map(({hotelName,stars,priceFrom,date,count,id}:IFavoriteCity) => {
                 return <div className="border-b-2" key={id}>
                     <Hotel
+                        id={id}
                         hotelName={hotelName}
                         stars={stars}
                         date={date}
                         count={count}
                         priceFrom={priceFrom}/>
-
                 </div>
             })}
         </div>
