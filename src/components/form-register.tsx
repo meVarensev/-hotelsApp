@@ -3,8 +3,6 @@ import {EMAIL_REGEXP, ERROR_MESSAGE, ERROR_MESSAGE_EMAIL} from "../utils/email-r
 import {CustomButton} from "./custom-button";
 import {SubmitHandler, useForm} from "react-hook-form";
 import {useNavigate} from "react-router-dom";
-
-import {postAuthUser} from "../utils/post-auth-user";
 import {useAppDispatch} from "../hoc/useAppDispatch";
 import {authUser} from "../store/auth-slice";
 import {useAddAuthUserMutation} from "../../api/fetch-auth";
@@ -20,29 +18,18 @@ interface IProps {
 
 function FormRegister({name}: IProps) {
     const {register, handleSubmit, formState: {errors}, reset} = useForm<LoginFormInputs>({mode: "onChange"});
-    const [addAuthUser] = useAddAuthUserMutation()
     const navigate = useNavigate();
     const dispatch = useAppDispatch()
     const [addAuthUser] = useAddAuthUserMutation()
+    const navigateMain = () => navigate('/');
 
-    const onSubmit: SubmitHandler<LoginFormInputs> =  (data) => {
-        console.log(data, "здесь можно отправить данные на сервер для регистраци");
-<<<<<<< HEAD
-        // здесь можно отправить данные на сервер для регистраци
-        // postAuthUser(data)
-        addAuthUser(data)
-=======
-        postAuthUser(data)
+    const onSubmit: SubmitHandler<LoginFormInputs> =  async (data) => {
+        await addAuthUser(data)
         dispatch( authUser(data))
->>>>>>> 77882309357d8344a62dc1e7a6f10fb46194fad5
-
-        handleClickLogin();
-        // addAuthUser(data)
+        navigateMain();
         reset();
     };
 
-
-    const handleClickLogin = () => navigate('/');
     return (
         <div>
             <form onSubmit={handleSubmit(onSubmit)}>

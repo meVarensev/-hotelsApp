@@ -6,17 +6,16 @@ import {setupListeners} from "@reduxjs/toolkit/query";
 import {authApi} from "../../api/fetch-auth";
 
 const rootReducer = combineReducers({
-    [locationApi.reducerPath]: locationApi.reducer,
-    // [authApi.reducerPath]: authApi.reducer,
-
     location: locationsReducer,
     user: authReducer,
+    [locationApi.reducerPath]: locationApi.reducer,
+    [authApi.reducerPath]: authApi.reducer,
+
 })
 
 export const store = configureStore({
     reducer: rootReducer,
-    middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware().concat(locationApi.middleware),
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(locationApi.middleware,authApi.middleware),
 })
 
 

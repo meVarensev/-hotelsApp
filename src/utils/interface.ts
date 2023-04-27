@@ -1,11 +1,12 @@
 export interface IFavoriteCity {
-    cityName: string,
-    rating: number,
+    hotelName: string,
+    stars: number,
     date: string,
     count: number,
-    price: number,
+    priceFrom: number,
     id: number,
 }
+
 
 
 export interface IGetHotelsParams {
@@ -14,15 +15,15 @@ export interface IGetHotelsParams {
     checkOutDate: string | Date
 }
 
-<<<<<<< HEAD
+
 export interface IGetHotels {
     hotelName: string,
     stars: string,
     hotelId: string,
     priceFrom: string
-=======
+}
+
 export interface LoginFormInputs {
-    email: string;
-    password: string;
->>>>>>> 77882309357d8344a62dc1e7a6f10fb46194fad5
+    email: string,
+    password: string,
 }

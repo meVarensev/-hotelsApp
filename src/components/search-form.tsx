@@ -4,7 +4,6 @@ import {SubmitHandler, useForm} from "react-hook-form";
 import {ERROR_MESSAGE} from "../utils/email-regexp";
 import {IGetHotelsParams} from "../utils/interface";
 import {formatDate} from "../utils/formatDate";
-import {useGetLocationsQuery} from '../../api/fetch-locations';
 import {useAppDispatch} from "../hoc/useAppDispatch";
 import {setLocation} from "../store/locations-slice";
 import {defaultLocation} from "../utils/default-location";
