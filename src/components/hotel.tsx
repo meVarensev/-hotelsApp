@@ -3,7 +3,7 @@ import Rating from "@mui/material/Rating";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import {useAddFavoriteLocationMutation, useDeleteProductMutation, useGetFavoriteQuery} from "../../api/fetch-auth";
 import {useAppSelector} from "../hoc/useAppDispatch";
-import {searchByLocation} from "../utils/search-by-location";
+import {searchByIndex} from "../utils/search-by-index";
 
 interface IFavoriteHotel {
     hotelName: string
@@ -20,16 +20,12 @@ function Hotel({hotelName, count, date, priceFrom, stars, id}: IFavoriteHotel) {
     const [deleteFavoriteLocation] = useDeleteProductMutation()
     const {data = []} = useGetFavoriteQuery()
     const handleClickFavoriteIcon = async () => {
-        // searchByLocation(data, hotelName) ?  await deleteFavoriteLocation(id) :  await addFavoriteLocation(state)
-        console.log( searchByLocation(data, hotelName))
+         searchByIndex(data, id) ?  await deleteFavoriteLocation(id) :  await addFavoriteLocation(state)
     }
 
-    const clickLog = () => {
-      console.log(id , hotelName, "dsad")
-    }
 
     return (
-        <div className="w-full" onClick={clickLog}>
+        <div className="w-full">
             <div className="flex justify-between mb-[13px] mt-[3px]">
                 <p>{hotelName}</p>
                 <FavoriteIcon className="text-[#E55858] cursor-pointer hover:text-[#b91c1c]"

@@ -24,7 +24,7 @@ export const authApi = createApi({
                 method: 'POST',
                 body,
             }),
-            invalidatesTags: [{type: 'Auth', id: 'LIST'}]
+            invalidatesTags: [{type: 'Auth'}]
         }),
         getFavorite: builder.query({
             query: () => `favorite`,

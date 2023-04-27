@@ -1,21 +1,4 @@
 {
   "users": [],
-  "favorite": [
-    {
-      "hotelName": "Golden Ring Hotel",
-      "stars": 5,
-      "priceFrom": 10000,
-      "date": "17.04.2023",
-      "count": 3,
-      "id": 1
-    },
-    {
-      "hotelName": "Moscow Marriott Grand Hotel",
-      "stars": 5,
-      "priceFrom": 9000,
-      "date": "17.04.2023",
-      "count": 3,
-      "id": 333578
-    }
-  ]
+  "favorite": []
 }
